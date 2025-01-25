@@ -6,6 +6,7 @@ resource "aws_instance" "web" {
   key_name                    = var.aws_keypair.name
   subnet_id                   = aws_subnet.public[0].id
   vpc_security_group_ids      = [aws_security_group.base.id]
+  user_data                   = file("install.sh")
 
   depends_on = [
     aws_key_pair.base,
@@ -18,3 +19,10 @@ resource "aws_instance" "web" {
   }
 
 }
+
+
+
+
+
+
+

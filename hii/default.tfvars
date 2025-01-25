@@ -38,8 +38,8 @@ aws_securitygroup = {
   name = "websg"
   rules = [{
 
-    from_port = 22
-    to_port   = 22
+    from_port = 80
+    to_port   = 80
 
   }]
 
