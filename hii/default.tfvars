@@ -29,7 +29,7 @@ public_subnets = [{
 
   },
   {
-    Name              = "web-3"
+    Name              = "web-4"
     cidr_block        = "198.168.3.0/24"
     availability_zone = "us-east-3a"
 }]

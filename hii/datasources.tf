@@ -9,3 +9,8 @@ data "aws_ami" "webimage" {
 
   owners = [var.aws_webserver_info.ami_filter.owner] # Canonical
 }
+
+
+
+
+
